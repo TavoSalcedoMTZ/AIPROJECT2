@@ -7,12 +7,14 @@ public class AIPROJECT2 : ModuleRules
 	public AIPROJECT2(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput",     "AIModule",
-    "StateTreeModule",
-    "GameplayStateTreeModule"});
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+        PublicDependencyModuleNames.AddRange(new string[] {
+    "Core", "CoreUObject", "Engine", "InputCore",
+    "AIModule", "NavigationSystem", "GameplayTasks",
+    "StateTreeModule", "GameplayStateTreeModule"
+});
+
+        PrivateDependencyModuleNames.AddRange(new string[] {  });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
